@@ -1,0 +1,58 @@
+1.Backtracking is one of the statergy of algorithm used to solve recursive problems.
+2.It uses the Brute force search to solve the problem, and the brute force search says that for the given problem, we try to make all the possible solutions and pick out the best solution from all the desired solutions
+3.backtracking is not used in solving optimization problems. Backtracking is used when we have multiple solutions, and we require all those solutions.
+4.Backtracking name itself suggests that we are going back and coming forward; if it satisfies the condition, then return success, else we go back again.
+5.The terms related to the backtracking are:
+
+Live node: The nodes that can be further generated are known as live nodes.
+E node: The nodes whose children are being generated and become a success node.
+Success node: The node is said to be a success node if it provides a feasible solution.
+Dead node: The node which cannot be further generated and also does not provide a feasible solution is known as a dead node.
+6.constraints are of two types:
+
+Implicit constraint: It is a rule in which how each element in a tuple is related.
+Explicit constraint: The rules that restrict each element to be chosen from the given set.
+
+Applications of Backtracking
+N-queen problem
+Sum of subset problem
+Graph coloring
+Hamiliton cycle
+
+
+
+
+
+
+Iterative Backtracking
+Implementation:
+
+Uses loops (like for or while loops) to traverse through the search space and backtrack when necessary.
+Memory Usage:
+
+Generally uses less memory than recursive backtracking because it doesn’t utilize the call stack extensively.
+Complexity:
+
+Can sometimes be more complex to implement, especially for problems where the state space is inherently recursive in nature.
+Efficiency:
+
+Typically faster and more efficient for problems where the state space is large or where the depth of recursion is significant.
+Stack:
+
+Uses an explicit stack data structure to manage states and backtracking.
+Recursive Backtracking
+Implementation:
+
+Uses recursive function calls to traverse through the search space and backtrack when necessary.
+Memory Usage:
+
+Can use a lot of memory due to the call stack, especially for problems with deep recursion.
+Complexity:
+
+Often simpler and more intuitive to implement, especially for problems where the state space can naturally be represented recursively.
+Efficiency:
+
+Can be slower and less efficient due to the overhead of recursive calls and the potential for redundant calculations.
+Stack:
+
+Utilizes the call stack implicitly to manage states and backtracking.
